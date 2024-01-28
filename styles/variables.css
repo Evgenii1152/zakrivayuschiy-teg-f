@@ -1,1 +1,20 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root {
+    --font-family-inter: 'inter-Variable', sans-serif;
+    --font-family-PressStart: 'PressStart2P-Regular', sans-serif;
+    --font-title: 700;
+    --font-main: 400;
+    --background: #FFF;
+    --accent-color: #000;
+    --gradient-color: #d3d3d3;
+    --bg-gradieent: #e7e7e7 0.01%, #1a1a1a;
+    --header-logo-text: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
+    --header-title: clamp(0.875rem, 0.677rem + 0.85vw, 1.438rem);
+    --width-body: clamp(23.188rem, 16.035rem + 30.52vw, 43.5rem);
+    --font-size-main: 18px;
+    --font-size-button: 14px;
+    --button-decorated: #fff;
+    --width-footer: clamp(19.125rem, 18.487rem + 2.72vw, 20.938rem);
+    --dialog-width: clamp(21.313rem, 20.96rem + 1.5vw, 22.313rem);
+    --dialog-button: clamp(16.063rem, 15.27rem + 3.38vw, 18.313rem);
+}
