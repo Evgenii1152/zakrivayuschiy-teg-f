@@ -12,3 +12,95 @@
 
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
 */
+
+.sparks {
+    opacity: 0;
+}
+
+.heart .contour {
+    fill: var(--accent-color);
+    transition: fill 0.1 linear;
+}
+
+.heart .core {
+    fill: transparent;
+    transition: fill 0.3s 0.03s linear;
+}
+
+.heart:hover .core {
+    fill: var(--accent-color);
+    transition: fill 0.3s linear;
+}
+
+.heart:active .core {
+    fill: var(--color-sparks);
+    transition: fill 0.3s linear;
+}
+
+.like-icon.is-liked .core {
+    fill: var(--color-sparks);
+    transition: fill 0.3s linear;
+}
+
+.heart .main-body {
+    fill: transparent;
+    transition: fill 0.3s ease-in-out;
+}
+
+.heart:hover .main-body {
+    fill: var(--accent-color);
+    transition: fill 0.3s 0.05s ease-in-out;
+}
+
+.heart:active .main-body {
+    fill: var(--color-sparks);
+    transition: fill 0.3s 0.05s ease-in-out;
+}
+
+.like-icon.is-liked .main-body {
+    fill: var(--color-sparks);
+    transition: fill 0.3s 0.05s ease-in-out;
+}
+
+.like-icon.is-liked .contour {
+    fill: var(--color-sparks);
+    transition: fill 0.3s 0.06s ease-in-out;
+}
+
+.like-icon.is-liked .heart {
+    transform-origin: center;
+    animation: scale 0.3s 0.1s ease-in;
+}
+
+@keyframes scale {
+    0% {
+        scale: 1;
+    }
+    100% {
+        scale: 1.5;
+    }
+}
+
+.like-icon.is-liked .sparks {
+    animation: burning-sparks 0.3s 0.3s ease-in;
+}
+
+@keyframes burning-sparks {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes arrow {
+  to {
+    left: -15px;
+  }
+  from {
+    left: -19px;
+  }
+}
+
+

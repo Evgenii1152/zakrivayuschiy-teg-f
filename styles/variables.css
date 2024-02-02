@@ -17,4 +17,5 @@
     --width-footer: clamp(19.125rem, 18.487rem + 2.72vw, 20.938rem);
     --dialog-width: clamp(21.313rem, 20.96rem + 1.5vw, 22.313rem);
     --dialog-button: clamp(16.063rem, 15.27rem + 3.38vw, 18.313rem);
+    --color-sparks: #FF0000;
 }
